@@ -3,7 +3,7 @@ import numpy as np
 
 folder = 'SE7.105'
 
-# Initialize based of folder to process:
+# Initialize based on folder to process:
 if folder == 'data_new':
     dists_x = np.arange(0.0, 35.5, 0.5)
     dists_y = (0.4, 0.9, 1.4)
@@ -11,7 +11,7 @@ if folder == 'data_new':
     dist_y_offset = 0
 elif folder == 'SE7.105':
     dists_x = np.arange(1.0, 9.0, 0.5)
-    dists_y = (3.1, 3.6, 4.4, 4.9, 6.4, 6.9)
+    dists_y = (3.1, 3.6, 4.4, 4.9, 5.4, 5.9, 6.4, 6.9)
     prefix = 'lab7105'
     dist_y_offset = 0
 elif folder == 'SE7.106':
