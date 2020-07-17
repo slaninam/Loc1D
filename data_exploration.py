@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-folder = 'SE7.105'
+folder = 'SE7.106'
 
 # Initialize based on folder to process:
 if folder == 'data_new':
@@ -35,7 +35,7 @@ for dist_x in dists_x:
             print(fname+' not found.')
         if len(df)>0: # only add if the data is actually read
             df['dist_x'] = dist_x
-            df['dist_y'] = dist_y + dist_y_offset
+            df['dist_y'] = format(dist_y + dist_y_offset, '.1f')
             dfs.append(df)       
 df = pd.concat(dfs).reset_index(drop=True)
 print('{} items read.'.format(len(df)))

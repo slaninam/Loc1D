@@ -6,7 +6,7 @@ import numpy as np
 
 anchor = '3'
 
-df = pd.read_csv('corridor_clean.csv',sep=';')
+df = pd.read_csv('data_csv/corridor_clean.csv',sep=';')
 
 dispdata = df.groupby(['dist_x','dist_y'], as_index=False).mean()
 dispdata = dispdata[dispdata['dist_y']==0.9].set_index('dist_x').loc[:,('a'+
@@ -19,11 +19,11 @@ plt.figure(figsize=(10,4))
 #_=plt.plot(dispdata)
 
 xval = dispdata.reset_index().loc[:,'dist_x']
-plt.step(xval,dispdata.loc[:,'a'+anchor+'c0'],color=colors[0],label='Channel 0')
+plt.step(xval,dispdata.loc[:,'a'+anchor+'c0'],color=colors[0],label='Channel 37')
 plt.plot(xval,dispdata.loc[:,'a'+anchor+'c0'],'o--',color=colors[0],alpha=0.3)
-plt.step(xval,dispdata.loc[:,'a'+anchor+'c1'],color=colors[1],label='Channel 1')
+plt.step(xval,dispdata.loc[:,'a'+anchor+'c1'],color=colors[1],label='Channel 38')
 plt.plot(xval,dispdata.loc[:,'a'+anchor+'c1'],'o--',color=colors[1],alpha=0.3)
-plt.step(xval,dispdata.loc[:,'a'+anchor+'c2'],color=colors[2],label='Channel 2')
+plt.step(xval,dispdata.loc[:,'a'+anchor+'c2'],color=colors[2],label='Channel 39')
 plt.plot(xval,dispdata.loc[:,'a'+anchor+'c2'],'o--',color=colors[2],alpha=0.3)
 plt.xlabel('Distance coordinate [m], anchor '+anchor+'.')
 plt.ylabel('RSS [dBm]')
