@@ -2,7 +2,12 @@
 Analysis of Bluetooth Received Signal Strength at the inputs of four anchors placed along a single dimension to 
 obtain device location.
 
-Contains:
+**Measurement setup**
+
+The portable device (tag) periodically transmits Bluetooth Low Energy (BLE) advertisement packets at BLE channels 37, 38, 39 with fixed transmit power. Four anchors are located in the experimental area, each equipped with four BLE receivers. The measurement focuses on Received Signal Strength, i.e., the received signal level (in dBm) of the advertisement packet at the anchor receivers. It can be assumed that greater distance between the tag and the anchor involves larger signal path attenuation and thus lower RSS. This dependency, however, is not straightforward in real environment.
+
+**Contains**
+
 * Rough measured data for 1D positioning in the 'data' subfolder
 * Rough measured data for the 2D positioning in the 'data_new', 'SE7.105', 'SE7.106' subfolders
 * Preprocessed and clean data in the 'data_csv' subfolder. For preprocessing, the data_exploration.py script is used.
