@@ -3,7 +3,8 @@ Analysis of Bluetooth Received Signal Strength at the inputs of four anchors pla
 obtain device location.
 
 Contains:
-* Rough measured data in the 'data' subfolder
+* Rough measured data for 1D positioning in the 'data' subfolder
+* Rough measured data for the 2D positioning in the 'data_new', 'SE7.105', 'SE7.106' subfolders
 * Preprocessed and clean data in the 'data_csv' subfolder
 * Python scripts implementing location classifiers in the root.
 
