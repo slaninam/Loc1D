@@ -13,6 +13,8 @@ The portable device (tag) periodically transmits Bluetooth Low Energy (BLE) adve
 * Preprocessed and clean data in the 'data_csv' subfolder. For preprocessing, the data_exploration.py script is used.
 * Python scripts implementing location classifiers in the root.
 
+**Usage**
+
 In order to train and evaluate a model, run
 * modelXd_CLF.py
 such that 
