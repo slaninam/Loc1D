@@ -9,6 +9,7 @@ dist.{X.Xm}X{Y.Ym}.txt
 * Example: dist.0.5mX0.4m corresponds to location with X = 0.5m and Y=0.4m
 
 **Contents**
+
 The files are comma separated values. Delimiter is ','.
 * Timestamp
 * TagID
