@@ -5,7 +5,7 @@ obtain device location.
 Contains:
 * Rough measured data for 1D positioning in the 'data' subfolder
 * Rough measured data for the 2D positioning in the 'data_new', 'SE7.105', 'SE7.106' subfolders
-* Preprocessed and clean data in the 'data_csv' subfolder
+* Preprocessed and clean data in the 'data_csv' subfolder. For preprocessing, the data_exploration.py script is used.
 * Python scripts implementing location classifiers in the root.
 
 In order to train and evaluate a model, run
