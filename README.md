@@ -33,3 +33,22 @@ Auxiliary scrips are available for visualizations and error calculation:
 * error2d.py
 * visualization.py
 * visualization2d.py
+
+**Citation**
+
+If your use of these files leads to a scientific publication, please, cite our work:
+
+@article{Polak_Sensors_2021,\
+&nbsp;&nbsp;     doi = {10.3390/s21134605},\
+&nbsp;&nbsp;     url = {https://doi.org/10.3390/s21134605}, \
+&nbsp;&nbsp;     year = {2021},\
+&nbsp;&nbsp;     month = {July},\
+&nbsp;&nbsp;     publisher = {MDPI},\
+&nbsp;&nbsp;     volume = {21},\
+&nbsp;&nbsp;     number = {13},\
+&nbsp;&nbsp;     pages = {1--25},\
+&nbsp;&nbsp;     author = {Ladislav Polak and Stanislav Rozum and Martin Slanina and Tomas Bravenec and Tomas Fryza and Aggelos Pikrakis},\
+&nbsp;&nbsp;     title = {Received Signal Strength Fingerprinting-Based Indoor Location Estimation Employing Machine Learning},\
+&nbsp;&nbsp;     journal = {Sensors}\
+}
+
